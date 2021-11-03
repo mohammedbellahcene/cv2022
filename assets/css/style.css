@@ -1,0 +1,20 @@
+a:link {
+  color: goldenrod; }
+a:hover {
+  color: red; }
+a:active {
+  color: purple; }
+
+figure {
+  margin: 0; }
+
+nav {
+  display: flex;
+  justify-content: center; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em; }
+
+/*# sourceMappingURL=style.css.map */
