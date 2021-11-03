@@ -16,5 +16,7 @@ nav {
     display: flex;
     justify-content: space-around;
     gap: 1em; }
+    nav ul li {
+      padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
