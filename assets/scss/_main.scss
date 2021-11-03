@@ -1,7 +1,11 @@
 a{
-    &:link{color:goldenrod;}
-    &:hover{color:red;}
+    &:link{color:$secondary_color;}
+    &:hover{color:$secondary_color}
     &:active{color:purple;}
+}
+
+ul{
+    list-style: none;
 }
 
 
@@ -11,14 +15,45 @@ figure{
 nav{
     display:flex;
     justify-content: center;
+    margin:0;
     ul{
-        list-style: none;
+        
         display: flex;
         justify-content: space-around;
         gap: 1em;
         li{
             padding: 10px;
+            background-color: $primary_color;
+            padding: 7px 10px;
+            font-family: "Roboto";
+            &:hover{
+                background-color: $white;
+                color:$primary_color;
+            }
+            
+            a{
+                color:$white;
+                text-decoration: none;
+                
+            }
             
         }
     }
+}
+h1,h2{
+    
+    font-family: "Playfair Bolditalic";
+  
+
+}
+h1{
+    font-size: 5vh;
+    color:$primary_color;
+    text-align: center;
+}
+
+/**section A propos**/
+.container{
+    display: flex;
+    justify-content: space-around;
 }
