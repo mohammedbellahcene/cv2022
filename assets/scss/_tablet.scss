@@ -1,0 +1,16 @@
+@media screen and (min-width:480px) and (max-width:779px){
+    h1{
+        font-size:10vh;
+
+    }
+    
+    .mobile{
+        display: none;
+    }
+    container-formations{
+        display:flex;
+        article{
+            width:45%;
+        }
+    }
+}

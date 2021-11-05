@@ -19,7 +19,7 @@
 <body>
 
     <header>
-        <figure>
+        <figure class="foto">
 
             <img src="assets/img/dev-worker_x2100.jpg" alt="Photo deco"
                 srcset="assets/img/dev-worker_x2100.jpg 2100w,assets/img/dev-worker_x1550.jpg 1550w, assets/img/dev-worker_x775.jpg 775w " sizes="(min-width:400) 775px, (min-width:960) 1550px, (min-width:1600) 2100px, 100vw">
@@ -28,8 +28,21 @@
 
     
 
+        <nav class=" desktop hide">
+            <ul>
+                <li><a href="#" title="A propos">A propos</a></li>
+                <li><a href="#" title="Mes compétences">Compétence</a></li>
+                <li><a href="#" title="Expériences professionelles">Expérience</a></li>
+                <li><a href="#" title="Formation">Formations</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+
+        </nav>
         <nav>
-            <ul class="nav-header">
+            <span class=material-icons-outlined>menu</span>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
                 <li><a href="#apropos" title="A propos">A propos</a></li>
                 <li><a href="#competences" title="Mes compétences">Compétence</a></li>
                 <li><a href="#experiences" title="Expériences professionelles">Expérience</a></li>
@@ -37,7 +50,8 @@
                 <li><a href="contact.html" title="Contact">Contact</a></li>
             </ul>
 
-        </nav>
+
+        </div>
 
         <h1> <span class="material-icons-outlined">settings </span> Développeur front-end</h1>
 
@@ -48,21 +62,29 @@
             
                 <h2>A propos</h2>
                 <div class="container">
-                <figure>
-                    <img src="https://via.placeholder.com/150" alt="Photo profil">
-                </figure>
+                    <div class="apropos_foto">
+                        <figure>
+                            <img src="https://via.placeholder.com/150" alt="Photo profil">
+                        </figure>
+
+                    </div>
+                
                 <header>
-                    <ul>
-                        <li>BELLAHCENE</li>
-                        <li>MOHAMMED</li>
-                        <li><span class="material-icons-outlined">
-                                mail
-                            </span><a href="mailto:johndupont@gmail.com">Contacter moi</a> </li>
-                        <li class="active"><a href="tel:01123455">Téléphone</a></li>
-                        <li>
-                            <address> 8 Rue Gaston Monmousseau 95100 Argenteuil</address>
-                        </li>
-                    </ul>
+                    <div class="description">
+                        <ul>
+                            <li>BELLAHCENE MOHAMMED</li>
+                            
+                            <li><span class="material-icons-outlined">
+                                    mail
+                                </span><a href="mailto:johndupont@gmail.com">Contacter moi</a> </li>
+                            <li class="active"><a href="tel:01123455">Téléphone</a></li>
+                            <li>
+                                <address> 8 Rue Gaston Monmousseau 95100 Argenteuil</address>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
                 </header>
             </div>
         
@@ -128,6 +150,7 @@
         </section>
         <section class="formations">
             <h2 class="=title-formation">Formations</h2>
+            <div class="container-formations">
             <article>
 
                 <h3>Développeur python</h3>
@@ -152,13 +175,18 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Necessitatibus, possimus modi
                     temporibus blanditiis obcaecati cupiditate harum?<br> Nihil voluptatem tenetur exercitatio>
             </article>
+        </div>
         </section>
 
     </main>
 
     <footer class="footer">
-        <div><span><i class="fab fa-facebook-square"></i></span><i class="fab fa-linkedin-in"></i><span></span><i
-                class="fab fa-twitter-square"></i><span></span></div>
+        <div class="footer_social">
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span></span><i class="fab fa-linkedin-in"></i></span>
+            <span><i class="fab fa-twitter-square"></i><span></span>
+        </div>
+        <div>Copyright &copy; </div>
     </footer>
 
 

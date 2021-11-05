@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <figure class="foto">
+
+            <img src="assets/img/dev-worker_x2100.jpg" alt="Photo deco"
+                srcset="assets/img/dev-worker_x2100.jpg 2100w,assets/img/dev-worker_x1550.jpg 1550w, assets/img/dev-worker_x775.jpg 775w "
+                sizes="(min-width:400) 775px, (min-width:960) 1550px, (min-width:1600) 2100px, 100vw">
+        </figure>
+
+
+
+
+        <nav class=" desktop hide">
+            <ul>
+                <li><a href="#" title="A propos">A propos</a></li>
+                <li><a href="#" title="Mes compétences">Compétence</a></li>
+                <li><a href="#" title="Expériences professionelles">Expérience</a></li>
+                <li><a href="#" title="Formation">Formations</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+            </ul>
+
+        </nav>
+        <nav>
+            <span class=material-icons-outlined>menu</span>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#apropos" title="A propos">A propos</a></li>
+                <li><a href="#competences" title="Mes compétences">Compétence</a></li>
+                <li><a href="#experiences" title="Expériences professionelles">Expérience</a></li>
+                <li><a href="#formations" title="Formation">Formations</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+            </ul>
+
+
+        </div>
+
+        <h1> <span class="material-icons-outlined">settings </span> Développeur front-end</h1>
+
+    </header>
+    <section>
+        <h2>Contacter moi</h2>
+        <form action="response.html" method="post">
+            <div class="container_form">
+                <div class="form_contact"><label for="name"></label><input type="text" id="name"
+                        placeholder="Votre nom">
+                </div>
+                <div class="form_contact"><label for="prenom"></label><input type="text" id="prenom"
+                        placeholder="Votre prenom"></div>
+                <div class="form_contact"><label for="email"></label><input type="text" id="email"
+                        placeholder="Votre email"></div>
+                <div class="form_contact"><label for="phone"></label><input type="tel" id="phone"
+                        placeholder="Votre téléphne"></div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <div><input type="submit" value="Envoyer">
+                    <input type="reset" value="Annuler">
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>

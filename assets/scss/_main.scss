@@ -1,3 +1,4 @@
+
 a{
     &:link{color:$secondary_color;}
     &:hover{color:$secondary_color}
@@ -6,6 +7,11 @@ a{
 
 ul{
     list-style: none;
+
+}
+
+.apropos_foto{
+    border-radius: 50%;
 }
 
 
@@ -56,4 +62,66 @@ h1{
 .container{
     display: flex;
     justify-content: space-around;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.description{
+    line-height: 2em;
+    li {
+        &:nth-child(1){
+            font-size: 1.5em;
+        }
+        &:nth-child(2){
+            position: relative;
+            &::before{
+                font-family: 'Material Icons';
+                content: "\e0be";
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+            }
+        }
+        &:nth-child(3){
+            position: relative;
+            &::before{
+                font-family: 'Material Icons';
+                content: "\e0dd";
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+            }
+        }
+    }
+}
+.formations{
+    background-color: #373737;
+    color:white;
+}
+footer{
+    height: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .footer_social{
+        font-size: 48px;
+        color: rgba($color:#3b5998,$alpha:0.5);
+        cursor:pointer;
+        transition-duration:1s;
+        &:hover{
+            color:#3b5998;
+           
+        }
+    }
+}
+
+.competences{
+    background-color: #373737;
+    color:white;
 }

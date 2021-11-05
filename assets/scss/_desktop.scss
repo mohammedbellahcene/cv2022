@@ -1,0 +1,14 @@
+@media screen and(min-width:780px){
+    h1{
+        color:$secondary_color;
+    }
+    .container-formations{
+        display: flex;
+    }
+    .desktop{
+        display: block;
+    }
+    mobile{
+        display: none;
+    }
+}
